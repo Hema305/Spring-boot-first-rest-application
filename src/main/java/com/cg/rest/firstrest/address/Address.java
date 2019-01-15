@@ -4,22 +4,19 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class Address {
-	private int flatNumber;
+	private Integer flatNumber;
 	private String city;
-	private int pincode;
+	private Integer pincode;
 
 	public Address() {
 		super();
 		
 	}
-	@Override
-	public String toString() {
-		return "Address [flatNumber=" + flatNumber + ", city=" + city + ", pincode=" + pincode + "]";
-	}
-	public int getFlatNumber() {
+	
+	public Integer getFlatNumber() {
 		return flatNumber;
 	}
-	public void setFlatNumber(int flatNumber) {
+	public void setFlatNumber(Integer flatNumber) {
 		this.flatNumber = flatNumber;
 	}
 	public String getCity() {
@@ -28,11 +25,21 @@ public class Address {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getPincode() {
+	public Integer getPincode() {
 		return pincode;
 	}
-	public void setPincode(int pincode) {
+	public void setPincode(Integer pincode) {
 		this.pincode = pincode;
+	}
+	public Address(Integer flatNumber, String city, Integer pincode) {
+		super();
+		this.flatNumber = flatNumber;
+		this.city = city;
+		this.pincode = pincode;
+	}
+	@Override
+	public String toString() {
+		return "Address [flatNumber=" + flatNumber + ", city=" + city + ", pincode=" + pincode + "]";
 	}
 
 }

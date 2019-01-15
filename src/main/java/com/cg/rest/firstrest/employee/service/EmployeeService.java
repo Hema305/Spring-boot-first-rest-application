@@ -9,5 +9,9 @@ public interface EmployeeService {
 	void addNewEmployee(Employee employee);
 
 	List<Employee> getAllEmployees();
+	
+	void updateCustomer(Employee employee);
+	
+	void deleteEmployee(int employeeId);
 
 }
