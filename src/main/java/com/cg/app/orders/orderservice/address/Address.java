@@ -1,4 +1,4 @@
-package com.cg.rest.firstrest.address;
+package com.cg.app.orders.orderservice.address;
 
 import javax.persistence.Embeddable;
 
@@ -37,9 +37,11 @@ public class Address {
 		this.city = city;
 		this.pincode = pincode;
 	}
+
 	@Override
 	public String toString() {
 		return "Address [flatNumber=" + flatNumber + ", city=" + city + ", pincode=" + pincode + "]";
 	}
+	
 
 }
